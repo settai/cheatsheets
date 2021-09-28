@@ -43,8 +43,6 @@
 
 [Privilege Escalation](Privilege%20Escalation)
 
-[Google Dorking](Google%20Dorking)
-
 ## [SecLists](https://github.com/danielmiessler/SecLists) dictionary
 
 [https://github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
