@@ -237,8 +237,9 @@ smbmap -u <user> -p <pass> -H 10.10.10.10 -x ipconfig
 ### Smbclient
 
 ```txt
-smbclient
+smbclient <host>
 
+-L list available services on the server
 -W	specify workgroup
 -I	specify host's ip adresse
 -c cmd	run command on the target machine
@@ -250,6 +251,8 @@ mget mask	downlaod files matching the mask
 put file	upload file
 mput mask upload all files matching the mask to current working directory
 ```
+
+Due to shell restrictions, you will need to escape the backslashes for the host.
 
 ## Reverse shell
 
